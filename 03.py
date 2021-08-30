@@ -65,3 +65,21 @@ for i in dic:
     print(i,dic[i])
 print("您的钱包余额还剩：￥",money)
 print("---------------------------------")
+
+#抽奖
+import random
+print("恭喜您获得抽取一张随机优惠劵的资格")
+input("点击回车即可抽奖！")
+num = random.randint(1,45)
+if 1 < num < 10:
+    print("恭喜您！获得机械革命9折优惠券！")
+    coupon = 1
+    discount = 0.9
+if 11 < num < 30:
+    print("恭喜您！获得老干妈1折优惠券！")
+    coupon = 1
+    discount = 0.1
+if 31 < num < 45:
+    print("恭喜您！获得辣条2折优惠券！")
+    coupon = 1
+    discount = 0.2
